@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Jquery with design</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1>Jquery tutorial</h1>
+        </header>
+
+        <!-- Main content container-->
+        <div class="contentContainer">
+
+            <!--Welcome slide-->
+            <div id="welcome_slide" class="slide">
+                <h2>Welcome my basic jQuery tutorial</h2>
+                <input id="begin_btn" type="button" value="Let's begin">
+            </div>
+            <!--First slide-->
+            <div id="first_slide" class="slide">
+                <h3>Install Jquery -> Use a CDN:</h3>
+                
+                <article>
+                    The easiest way to use jQuery is to use a CDN(Google, Microsoft, CDNJS or jsDelivr).
+                    Just copy the selected cdn's link between script tags and put it into the html document's head section. 
+                </article>
+                <article>
+                    Google cdn:<br>
+                    <img src="pic/cdns/googleCdn.JPG">
+                </article>
+                <article>
+                    Microsoft cdn:<br>
+                    <img src="pic/cdns/microsoftCdn.JPG">
+                </article>
+                <article>
+                    CDNJS cdn:<br>
+                    <img src="pic/cdns/cdnjs.JPG">
+                </article>
+                <article>
+                    <input class="slideTo" type="button" value="Next">
+                </article>
+            </div>
+            <!--Second slide-->
+            <div id="second_slide" class="slide">
+                <h3>Select an element with jquery by:</h3>
+
+                <article>
+                    Id:<br>
+                    <img src="pic/selectors/id.JPG" alt="Select by id">
+                </article>
+                <article>
+                    Class:<br>
+                    <img src="pic/selectors/class.JPG" alt="Select by id">
+                </article>
+                <article>
+                    Tagname:<br>
+                    <img src="pic/selectors/tagname.JPG" alt="Select by id">
+                </article>
+                <article>
+                    Select multiple elements:<br>
+                    <img src="pic/selectors/multipleSelection.JPG" alt="Select by id">
+                </article>
+                <article>
+                    Select all elements:<br>
+                    <img src="pic/selectors/allSelected.JPG" alt="Select by id">
+                </article>
+                <article>
+                    <input class="slideTo" type="button" value="Next">
+                </article>
+
+            </div>
+            
+
+
+        </div>
+
+
+        <footer>
+            <h1>Created by: Project Pannonia</h1>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
