@@ -24,6 +24,57 @@
             </div>
             <!--First slide-->
             <div id="first_slide" class="slide">
+                <h3>What is jquery?</h3>
+                <article>
+                    JQuery is "just" a javascript library.<br>
+                    The purpose of jQuery is to make it much easier and faster to use JavaScript on your website.<br>
+                    Before you start studying jQuery, you should have a basic knowledge of:<br>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                   
+                    This is a lightweight, "write less, do more" JavaScript library.
+                    <br>
+                    The jQuery library contains the following features:<br>
+                     <ul>
+                         <li>HTML/DOM manipulation</li>
+                         <li>CSS manipulation</li>
+                         <li>HTML event methods</li>
+                         <li>Effects and animations</li>
+                         <li>AJAX</li>
+                         <li>Utilities</li>
+                     </ul>
+                     With jQuery you select HTML elements and perform "actions" on them.<br>
+                     Basic syntax: $(selector).action()<br>
+                     The "$" sigh to define jQuery.<br>
+                     The "selector" can be a "class", "id" or a "HTML tag".<br>
+                     A jQuery action() to be performed on the element(s).
+                </article>
+                <article>
+                    <input class="slideBack" type="button" value="Back">
+                    <input class="slideTo" type="button" value="Next">
+                </article>
+            </div>
+            <!--Second slide-->
+            <div id="second_slide" class="slide">
+                <h3>The document ready event</h3>
+                <article>
+                    This is to prevent any jQuery code from running before the document is finished loading.(Just like an "Immediately invoked function")<br>
+                    It is good practice to wait for the document to be fully loaded and ready before working with it.<br> This also allows you to have your JavaScript code before the body of your document, in the head section. <br>
+                    <img src="pic/ready/ready.JPG" alt="Document ready function"><br>
+                    Or you can use this form(It is the same).<br>
+                    <img src="pic/ready/anotherReady.JPG"><br>
+                    In my opinion the "document ready" event is easier to understand when reading the code.
+                </article>
+                <article>
+                    <input class="slideBack" type="button" value="Back">
+                    <input class="slideTo" type="button" value="Next">
+                </article>
+            </div>
+            <!--Third slide-->
+            <div id="third_slide" class="slide">
                 <h3>Install Jquery -> Use a CDN:</h3>
                 
                 <article>
@@ -47,8 +98,8 @@
                     <input class="slideTo" type="button" value="Next">
                 </article>
             </div>
-            <!--Second slide-->
-            <div id="second_slide" class="slide">
+            <!--Fourth slide-->
+            <div id="fourth_slide" class="slide">
                 <h3>Select an element with jquery by:</h3>
 
                 <article>
@@ -80,8 +131,8 @@
                     <input class="slideTo" type="button" value="Next">
                 </article>
             </div>
-            <!--Third slide-->
-            <div id="third_slide" class="slide">
+            <!--Fifth slide-->
+            <div id="fifth_slide" class="slide">
                 <h3>Add or Remove a class:</h3>
                 <article>
                     Add a class to elements classlist:<br>
@@ -92,6 +143,32 @@
                     <img src="pic/addRemoveClass/removeClass.JPG" alt="Remove class ">
                 </article>
 
+                <article>
+                    <input class="slideBack" type="button" value="Back">
+                    <input class="slideTo" type="button" value="Next">
+                </article>
+            </div>
+            <!--Sixth slide-->
+            <div id="sixth_slide" class="slide">
+                <h3>Events</h3>
+
+                <article>
+                    What  are Events?<br>
+                    All the different visitors' actions that a web page can respond to are called events.<br>
+                    They are represents the moment when something happens.<br>
+                    Like: moving a mouse over an element, selecting radio buttons, clicking on something.
+                </article>
+                <article>
+                    After we have a good understanging on selectors let's see some examples on events.
+                </article>
+                <article>
+                    You can use the "ES6 way" with the arrow function:<br>                    
+                    <img src="pic/events/clickEvent.JPG">
+                </article>
+                <article>
+                    Or the "old way":<br>
+                    <img src="pic/events/anotherClickEvent.JPG">
+                </article>
                 <article>
                     <input class="slideBack" type="button" value="Back">
                     <input class="slideTo" type="button" value="Next">

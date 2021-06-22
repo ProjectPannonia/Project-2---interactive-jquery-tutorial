@@ -1,4 +1,4 @@
-const containerIds = ["#welcome_slide", "#first_slide", "#second_slide", "#third_slide"];
+const containerIds = ["#welcome_slide", "#first_slide", "#second_slide", "#third_slide", "#fourth_slide", "#fifth_slide", "#sixth_slide"];
 
 (() => { 
     for(let i = 1; i < containerIds.length; i++) {
