@@ -1,4 +1,4 @@
-const containerIds = ["#welcome_slide", "#first_slide", "#second_slide"];
+const containerIds = ["#welcome_slide", "#first_slide", "#second_slide", "#third_slide"];
 
 (() => { 
     for(let i = 1; i < containerIds.length; i++) {
@@ -27,5 +27,15 @@ nextButton.on( "click", () => {
         actual.hide(1500);
         next.show(1500);
         console.log("Pushed");
+    }
+});
+
+const previousButton = $(".slideBack");
+
+previousButton.on( "click", () => {
+
+    if(containerCounter > 0) {
+        
+        containerCounter--;
     }
 });

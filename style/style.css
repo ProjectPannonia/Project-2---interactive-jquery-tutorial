@@ -25,7 +25,7 @@ header h1 {
 header {
     font-size: 1.5em;
     color:white;
-    border-bottom-right-radius: 161px;
+    /*! border-bottom-right-radius: 161px; */
 }
 .contentContainer {
     width: 89vw;
@@ -60,13 +60,13 @@ header {
     margin-bottom: 1vh;
 }
 
-.slideTo {
+.slideTo, .slideBack {
 
     width: 24vw;
-    /*! display: block; */
     padding: 1vh;
     margin: 0 auto;
 }
+
 
 .slide article:last-child {
     
@@ -107,9 +107,8 @@ header {
 
 footer {
     font-size: 1.2em;
-    border-bottom-right-radius: 161px;
 }
 footer h1 {
     border-top-left-radius: 2em;
-    border-top: 4px darkorange;
+    border-top: 4px solid darkorange;
 }
