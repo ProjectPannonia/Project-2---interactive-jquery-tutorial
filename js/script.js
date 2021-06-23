@@ -19,15 +19,13 @@ const nextButton = $( ".slideTo" );
 nextButton.on( "click", () => {
     let actual, next;
 
-    if(containerCounter < containerIds.length) {
+    if(containerCounter < containerIds.length-1) {
         actual = $(containerIds[containerCounter]);
-        console.log("Actual: " + containerIds[containerCounter]);
         containerCounter++;
         next = $(containerIds[containerCounter]);
         actual.hide(1500);
         next.show(1500);
-        console.log("Pushed");
-    }
+    } 
 });
 
 const previousButton = $(".slideBack");
@@ -35,7 +33,10 @@ const previousButton = $(".slideBack");
 previousButton.on( "click", () => {
 
     if(containerCounter > 0) {
-        
+        actual = $(containerIds[containerCounter]);
         containerCounter--;
+        next = $(containerIds[containerCounter]);
+        actual.hide(1500);
+        next.show();
     }
 });
