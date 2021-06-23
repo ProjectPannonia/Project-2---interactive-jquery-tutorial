@@ -29,17 +29,17 @@ header {
 }
 .contentContainer {
     width: 89vw;
-    height: 75vh;
+    /*! height: 75vh; */
     background-color: darkorchid;
     margin: 2vh 0 2vh 0;
     border-top-left-radius: 92px;
     border-bottom-right-radius: 92px;
+    border-top: 3px solid magenta;
+    border-bottom: 3px solid fuchsia;
 }
 .slide {
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
-    height: 72vh;
 }
 .slide h2:first-child {
     text-align: center;
@@ -52,7 +52,7 @@ header {
     
     background: darkorange;
     width: 85vw;
-    margin-left: 3vh;
+    margin-left: 4vh;
     font-size: 1.5em;
     color: white;
     padding: 1vh;
@@ -72,12 +72,13 @@ header {
     
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
+    margin-bottom: 3vh;
 }
 
 #begin_btn {
     width: 26vw;
     height: 8vh;
-    margin: 0 auto;
+    margin: 0 auto 17vh auto;
     display: block;
     background-color: inherit;
     border-radius: 10px;
