@@ -1,4 +1,4 @@
-const containerIds = ["#welcome_slide", "#sections_slide", "#first_slide", "#second_slide", "#third_slide", "#fourth_slide", "#fifth_slide", "#sixth_slide","#seventh_slide","#eight_slide", "#nineth_slide", "#tenth_slide", "#eleventh_slide"];
+const containerIds = ["#welcome_slide", "#sections_slide", "#first_slide", "#second_slide", "#third_slide", "#fourth_slide", "#fifth_slide", "#sixth_slide", "#seventh_slide", "#eight_slide", "#nineth_slide", "#tenth_slide", "#eleventh_slide"];
 
 (() => { 
     const contentContainer = $(".contentContainer");
@@ -18,7 +18,7 @@ const containerIds = ["#welcome_slide", "#sections_slide", "#first_slide", "#sec
 
 $("#begin_btn").on( "click", () => {
     $("#welcome_slide").hide(1500);
-    $("#first_slide").show(1500);
+    $("#sections_slide").show(1500);
 });
 
 let containerCounter = 1;
