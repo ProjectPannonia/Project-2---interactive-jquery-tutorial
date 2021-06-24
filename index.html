@@ -230,9 +230,9 @@
                 </article>
             </div>
             <!--Seventh slide-->
-            <div id="sixth_slide" class="slide">
+            <div id="eight_slide" class="slide">
                 <h3>
-                    jQuery effects.
+                    jQuery effects - Show - Hide - Toggle
                 </h3>
                 <article>
                     <p>
@@ -248,8 +248,165 @@
                 </article>
                 <article>
                     <p>
-                        Toggle: Toggle between
+                        Toggle: Toggle between show and hide
                     </p>
+                    <p>
+                        You can also toggle between hiding and showing an element with the toggle() method.
+
+                        Shown elements are hidden and hidden elements are shown:
+                    </p>
+                    <img src="pic/showHide/toggle.JPG">
+                </article>
+                <article>
+                    <p>
+                        Advanced properties: Show, hide and toggle methods have optional properties.
+                        You can call this function without parameters like in examples above, but you can add two optional parameters to these functions.
+                    </p>
+                    <p>
+                        $(selector).hide(speed,callback);
+                    </p>
+                    <p>
+                        $(selector).show(speed,callback);
+                    </p>
+                    <p>
+                        The optional speed parameter specifies the speed of the hiding/showing, and can take the following values: "slow", "fast", or milliseconds.
+                        The optional callback parameter is a function to be executed after the hide() or show() method completes (you will learn more about callback functions in a later chapter).
+                    </p>
+                    <p>
+                        The following example demonstrates the speed parameter with hide():
+                    </p>
+                    <img src="pic/showHide/hideSpeed.JPG">>
+                </article>
+                
+                <article>
+                    <input class="slideBack" type="button" value="Back">
+                    <input class="slideTo" type="button" value="Next">
+                </article>
+            </div>
+            <div id="nineth_slide" class="slide">
+                <h3>
+                    jQuery effects - Fade
+                </h3>
+                <article>
+                    <p>
+                        Fading:
+                    </p>
+                    <p>
+                        With jQuery you can fade elements in and out of visibility.
+                    </p>
+                    <p>
+                        Fading Methods:
+                    </p>
+                    <p>
+                        jQuery has the following fade methods:
+                        <ul>
+                            <li>fadeIn()</li>
+                            <li>fadeOut()</li>
+                            <li>fadeToggle()</li>
+                            <li>fadeTo()</li>
+                        </ul>
+                    </p>
+                </article>
+                <article>
+                    <p>
+                        The jQuery fadeIn() method is used to fade in a hidden element.<br>
+                        Syntax: $(selector).fadeIn(speed,callback);<br>
+                        The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.<br>
+                        The optional callback parameter is a function to be executed after the fading completes.<br>
+                        The following example demonstrates the fadeIn() method with different parameters:<br>
+                    </p>
+                    <img src="pic/showHide/fadeIn.JPG">
+                </article>
+                <article>
+                    <p>
+                        The jQuery fadeOut() method is used to fade out a visible element.<br>
+                        Syntax: $(selector).fadeOut(speed,callback);<br>
+                        The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.<br>
+                        The optional callback parameter is a function to be executed after the fading completes.<br>
+                        The following example demonstrates the fadeOut() method with different parameters:<br>
+                    </p>
+                    <img src="pic/showHide/fadeOut.JPG">
+                </article>
+                <article>
+                    <p>
+                        The jQuery fadeToggle() method toggles between the fadeIn() and fadeOut() methods.<br>
+                        If the elements are faded out, fadeToggle() will fade them in.<br>
+                        If the elements are faded in, fadeToggle() will fade them out.<br>
+                        $(selector).fadeToggle(speed,callback);<br>
+                        The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.<br>
+                        The optional callback parameter is a function to be executed after the fading completes.<br>
+                        The following example demonstrates the fadeToggle() method with different parameters:<br>
+                    </p>
+                    <img src="pic/showHide/fadeToggle.JPG">
+                </article>
+                <article>
+                    <p>
+                        The jQuery fadeTo() method allows fading to a given opacity (value between 0 and 1).<br>
+                        Syntax: $(selector).fadeTo(speed,opacity,callback);<br>
+                        The required speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.<br>
+                        The required opacity parameter in the fadeTo() method specifies fading to a given opacity (value between 0 and 1).<br>
+                        The optional callback parameter is a function to be executed after the function completes.<br>
+                        The following example demonstrates the fadeTo() method with different parameters:<br>
+                    </p>
+                    <img src="pic/showHide/fadeTo.JPG">
+                </article>
+                <article>
+                    <input class="slideBack" type="button" value="Back">
+                    <input class="slideTo" type="button" value="Next">
+                </article>
+            </div>
+            <div id="tenth_slide" class="slide">
+                <h3>
+                    jQuery effects - Sliding
+                </h3>
+                <article>
+                    <p>
+                        The jQuery slide methods slide elements up and down.
+                    </p>
+                    <p>
+                        With jQuery you can create a sliding effect on elements.<br>
+                        jQuery has the following slide methods:
+                        <ul>
+                            <li>slideDown()</li>
+                            <li>slideUp()</li>
+                            <li>slideToggle()</li>
+                        </ul>
+                    </p>
+                </article>
+                <article>
+                    <p>slideDown() Method</p>
+                    <p>
+                        The jQuery slideDown() method is used to slide down an element.<br>
+                        Syntax: $(selector).slideDown(speed,callback);<br>
+                        The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.<br>
+                        The optional callback parameter is a function to be executed after the sliding completes.<br>
+                        The following example demonstrates the slideDown() method:
+                    </p>
+                    <img src="pic/showHide/flip.JPG">
+                </article>
+                <article>
+                    <p>slideUp()</p>
+                    <p>
+                        The jQuery slideUp() method is used to slide up an element.<br>
+                        Syntax: $(selector).slideUp(speed,callback);<br>
+                        The optional speed parameter specifies the duration of the effect. It can take the following values: "slow", "fast", or milliseconds.<br>
+                        The optional callback parameter is a function to be executed after the sliding completes.<br>
+                        The following example demonstrates the slideUp() method:<br>
+                    </p>
+                    <img src="pic/showHide/slideUp.JPG">
+                </article>
+                <article>
+                    <p>slideToggle()</p>
+                    <p>
+                        The jQuery slideToggle() method toggles between the slideDown() and slideUp() methods.<br>
+                        If the elements have been slid down, slideToggle() will slide them up.<br>
+                        If the elements have been slid up, slideToggle() will slide them down.<br>
+                        Syntax: $(selector).slideToggle(speed,callback);<br>
+                        The optional speed parameter can take the following values: "slow", "fast", milliseconds.<br>
+                        The optional callback parameter is a function to be executed after the sliding completes.<br>
+                        The following example demonstrates the slideToggle() method:
+                    </p>
+                    <img src="pic/showHide/slideToggle.JPG">
                 </article>
                 <article>
                     <input class="slideBack" type="button" value="Back">

@@ -1,4 +1,4 @@
-const containerIds = ["#welcome_slide", "#first_slide", "#second_slide", "#third_slide", "#fourth_slide", "#fifth_slide", "#sixth_slide","#seventh_slide"];
+const containerIds = ["#welcome_slide", "#first_slide", "#second_slide", "#third_slide", "#fourth_slide", "#fifth_slide", "#sixth_slide","#seventh_slide","#eight_slide", "#nineth_slide", "#tenth_slide"];
 
 (() => { 
     for(let i = 1; i < containerIds.length; i++) {
@@ -23,8 +23,8 @@ nextButton.on( "click", () => {
         actual = $(containerIds[containerCounter]);
         containerCounter++;
         next = $(containerIds[containerCounter]);
-        actual.hide(1500);
-        next.show(1500);
+        actual.hide(1000);
+        next.show(1300);
     } 
 });
 
@@ -36,7 +36,7 @@ previousButton.on( "click", () => {
         actual = $(containerIds[containerCounter]);
         containerCounter--;
         next = $(containerIds[containerCounter]);
-        actual.hide(1500);
-        next.show();
+        actual.hide(1000);
+        next.show(1000);
     }
 });

@@ -40,6 +40,7 @@ header {
 .slide {
     display: flex;
     flex-direction: column;
+    min-height: 74vh;
 }
 .slide h2:first-child {
     text-align: center;
