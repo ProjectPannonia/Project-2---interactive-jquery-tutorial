@@ -61,6 +61,7 @@ header {
     margin-bottom: 1vh;
     
 }
+
 .slide img {
     width: 874px;
     height: auto;
@@ -81,7 +82,7 @@ header {
     margin-bottom: 3vh;
 }
 
-#begin_btn {
+.big_button {
     width: 26vw;
     height: 8vh;
     margin: 0 auto 17vh auto;
@@ -93,9 +94,12 @@ header {
     font-size: 1.6em;
 }
 
-#begin_btn:hover {
+.big_button:hover {
     background-color: #792DF1;
     border-color: #BC7A18;
+}
+.introduce {
+    background-color: darkorchid !important; 
 }
 
 .slide h3 {

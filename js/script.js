@@ -1,4 +1,18 @@
-const containerIds = ["#welcome_slide", "#sections_slide", "#first_slide", "#second_slide", "#third_slide", "#fourth_slide", "#fifth_slide", "#sixth_slide", "#seventh_slide", "#eight_slide", "#nineth_slide", "#tenth_slide", "#eleventh_slide"];
+const containerIds = [  "#welcome_slide", 
+                        "#sections_slide", 
+                        "#first_slide_introduce", "#first_slide",
+                        "#second_slide_introduce", "#second_slide",
+                        "#third_slide_introduce", "#third_slide",
+                        "#fourth_slide_introduce", "#fourth_slide",
+                        "#fifth_slide_introduce", "#fifth_slide",
+                        "#sixth_slide_introduce","#sixth_slide",
+                        "#seventh_slide_introduce", "#seventh_slide",
+                        "#eight_slide_introduce", "#eight_slide", 
+                        "#nineth_slide_introduce" , "#nineth_slide",
+                        "#tenth_slide_introduce" , "#tenth_slide",
+                        "#eleventh_slide_introduce" , "#eleventh_slide",
+                        "#last_slide"
+                    ];
 
 (() => { 
     const contentContainer = $(".contentContainer");
@@ -15,13 +29,23 @@ const containerIds = ["#welcome_slide", "#sections_slide", "#first_slide", "#sec
     }
 })();   
 
+let containerCounter = 1;
 
 $("#begin_btn").on( "click", () => {
+
     $("#welcome_slide").hide(1500);
     $("#sections_slide").show(1500);
+    
 });
 
-let containerCounter = 1;
+$("#finish_btn").on("click", () => {
+
+    $("#welcome_slide").show(1500);
+    $("#last_slide").hide(1500);
+    contentContainer = 1;
+
+});
+
 
 const nextButton = $( ".slideTo" );
 
