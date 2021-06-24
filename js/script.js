@@ -1,6 +1,15 @@
-const containerIds = ["#welcome_slide", "#first_slide", "#second_slide", "#third_slide", "#fourth_slide", "#fifth_slide", "#sixth_slide","#seventh_slide","#eight_slide", "#nineth_slide", "#tenth_slide", "#eleventh_slide"];
+const containerIds = ["#welcome_slide", "#sections_slide", "#first_slide", "#second_slide", "#third_slide", "#fourth_slide", "#fifth_slide", "#sixth_slide","#seventh_slide","#eight_slide", "#nineth_slide", "#tenth_slide", "#eleventh_slide"];
 
 (() => { 
+    const contentContainer = $(".contentContainer");
+    const contentContainerChildren = contentContainer.children();
+    /*
+    for(let i = 0; i < contentContainerChildren.length; i++) {
+        let element = contentContainerChildren[i];
+        containerIds.push(element.id);
+    }
+    console.log(containerIds);
+    */
     for(let i = 1; i < containerIds.length; i++) {
         $(containerIds[i]).hide();
     }
